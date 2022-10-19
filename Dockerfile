@@ -6,6 +6,8 @@ WORKDIR /MaxFirstLab
 
 COPY requirements.txt /MaxFirstLab/
 
+RUN pip install .
+
 RUN pip3 install -r requirements.txt
 
 COPY Laba_1/ /MaxFirstLab/
