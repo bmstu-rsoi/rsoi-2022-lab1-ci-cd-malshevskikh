@@ -83,6 +83,11 @@ DATABASES = {
         'PASSWORD': 'a26dcd8a1eb74bb5781347bcd76a21944be2927f0bc59385ffe694a2a83291fd',
         'HOST': 'ec2-34-241-90-235.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
+        'TEST': {
+            'NAME': 'd6ueurucd8g737',
+            'USER': 'lfipmluwqznqeh',
+            'PASSWORD': 'a26dcd8a1eb74bb5781347bcd76a21944be2927f0bc59385ffe694a2a83291fd',
+        }
     }
 }
 

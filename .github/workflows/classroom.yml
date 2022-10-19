@@ -31,9 +31,9 @@ jobs:
 
       - name: Run tests, makemigrations, migrate
         run: |
-          python manage.py test
-          python manage.py makemigrations
-          python manage.py migrate
+          python3 manage.py test --keepdb 
+          python3 manage.py makemigrations
+          python3 manage.py migrate
 
 
       - name: Deploy to Heroku
