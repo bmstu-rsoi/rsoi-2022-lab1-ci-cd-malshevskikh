@@ -16,4 +16,6 @@ COPY first_app/ /MaxFirstLab/
 
 COPY manage.py /MaxFirstLab/
 
+EXPOSE $PORT
+
 CMD [ "python3", "./manage.py", "runserver", "0.0.0.0:$PORT"]
