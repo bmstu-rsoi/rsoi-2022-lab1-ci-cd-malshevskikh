@@ -9,11 +9,12 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /MaxFirstLab
 
-COPY requirements.txt /MaxFirstLab/requirements.txt
+COPY . /MaxFirstLab/
+
+#COPY requirements.txt /MaxFirstLab/requirements.txt
 
 RUN pip install -r requirements.txt
 
-COPY . /MaxFirstLab
 
 CMD [ "python3", "/MaxFirstLab/manage.py runserver 0.0.0.0:$PORT"]
 #CMD python3 MaxFirstLab/manage.py runserver 0.0.0.0:$PORT
