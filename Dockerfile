@@ -2,15 +2,13 @@
 
 FROM python:3.8-slim-buster
 
-COPY . /MaxFirstLab
+COPY requirements.txt /MaxFirstLab/requirements.txt
 
 WORKDIR /MaxFirstLab
 
-COPY requirements.txt /MaxFirstLab
-
-RUN python -m pip install --upgrade pip
-
 RUN pip install -r requirements.txt
+
+COPY . /MaxFirstLab
 
 EXPOSE $PORT
 
