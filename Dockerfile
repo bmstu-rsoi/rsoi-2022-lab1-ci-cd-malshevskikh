@@ -11,8 +11,6 @@ COPY . /MaxFirstLab/
 
 COPY requirements.txt /MaxFirstLab/requirements.txt
 
-RUN pip install .
-
 RUN pip install -r requirements.txt
 
 #XPOSE $PORT
