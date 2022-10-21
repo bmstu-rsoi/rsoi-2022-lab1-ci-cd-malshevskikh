@@ -15,5 +15,5 @@ RUN pip install -r requirements.txt
 
 RUN  ls -a
 
-CMD [ "sh", "-c", "python3", "/MaxFirstLab/manage.py",  "runserver", "0.0.0.0:$PORT"]
+CMD [ "sh", "-c", "python3", "/MaxFirstLab/manage.py runserver 0.0.0.0:$PORT"]
 #CMD python3 MaxFirstLab/manage.py runserver 0.0.0.0:$PORT
