@@ -44,6 +44,8 @@ jobs:
             heroku_email: ${{secrets.EMAIL_FOR_HEROKU}}
             usedocker: true
 
+      - name: Let's wait
+        run: sleep 30
 
       - name: Run API Tests
         uses: matt-ball/newman-action@master
