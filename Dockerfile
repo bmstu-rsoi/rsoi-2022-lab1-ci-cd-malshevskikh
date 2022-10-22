@@ -19,4 +19,4 @@ EXPOSE $PORT
 
 #CMD [ "sh", "-c", "python3", "MaxFirstLab/manage.py runserver 0.0.0.0:$PORT"]
 
-CMD python3 manage.py runserver $PORT
+CMD python3 manage.py runserver 0.0.0.0:$PORT
