@@ -45,7 +45,7 @@ jobs:
             usedocker: true
 
       - name: Let's wait
-        run: sleep 90
+        run: sleep 30
 
       - name: Run API Tests
         uses: matt-ball/newman-action@master
