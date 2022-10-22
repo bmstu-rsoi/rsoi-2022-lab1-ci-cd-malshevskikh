@@ -4,7 +4,7 @@ FROM python:3.8.9
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-ENV PORT=8000
+ENV PORT=8080
 
 WORKDIR /MaxFirstLab
 
@@ -16,7 +16,7 @@ RUN pip install -r requirements.txt
 
 EXPOSE $PORT
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:$PORT"]
 
 #CMD [ "sh", "-c", "python3", "MaxFirstLab/manage.py runserver 0.0.0.0:$PORT"]
 
