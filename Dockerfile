@@ -15,7 +15,7 @@ COPY requirements.txt /MaxFirstLab/requirements.txt
 RUN pip install -r requirements.txt
 EXPOSE $PORT
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:$PORT"]
+CMD ["python3", "manage.py", "runserver"]
 
 #CMD [ "sh", "-c", "python3", "MaxFirstLab/manage.py runserver 0.0.0.0:$PORT"]
 
